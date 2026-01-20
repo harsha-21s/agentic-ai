@@ -5,7 +5,7 @@ st.set_page_config("PragyanAI Content Generator", layout="wide")
 col_logo, col_title = st.columns([1, 4])
 
 with col_logo:
-    st.image("https://via.placeholder.com/150x150?text=AI", width=100)
+    st.image("https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&h=300", width=100)
 
 with col_title:
     st.title("📢 Echo AI – Content Generator")
