@@ -2,7 +2,13 @@ import streamlit as st
 from groq import Groq
 
 st.set_page_config("PragyanAI Content Generator", layout="wide")
-st.title("📢 PragyanAI – Content Generator")
+col_logo, col_title = st.columns([1, 4])
+
+with col_logo:
+    st.image("https://via.placeholder.com/150x150?text=AI", width=100)
+
+with col_title:
+    st.title("📢 Echo AI – Content Generator")
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
